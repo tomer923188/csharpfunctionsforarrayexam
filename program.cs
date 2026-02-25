@@ -52,3 +52,26 @@
             Console.WriteLine("the sum is not the same blud");
         }   
     }
+
+    static void diddysList()
+    {
+        bool found = false;
+        int[] diddysList = new int[30];
+        Random epstein = new Random();
+        for (int i = 0; i < diddysList.Length; i++)
+        {
+            found = false;
+            diddysList[i] = epstein.Next(0, 50);
+            for (int j = 0; j < i && !found; j++)
+            {
+                if (diddysList[i] == diddysList[j])
+                {
+                    found = true;
+                    Console.WriteLine("Nigger not good");
+                }
+            }
+        }
+        for (int i = 0; i < diddysList.Length;i++)
+        {
+            Console.Write(diddysList[i] + " ");
+        }
