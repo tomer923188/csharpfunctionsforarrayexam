@@ -22,3 +22,33 @@
         Console.WriteLine(avg + " is the avg");
     }
 
+    static void zogieizogisum()
+    {
+             int sumEven = 0;
+        int sumOdd = 0;
+        int[] arr = new int[10];
+        Random rnd = new Random();
+        for (int i = 0; i < arr.Length; i++)
+        {
+            arr[i] = rnd.Next(0, 11);
+        }
+        for (int i = 0 ; i < arr.Length; i++)
+        {
+            if (i % 2 == 0)
+            {
+                sumEven += arr[i];
+            }
+            else
+            {
+                sumOdd += arr[i];
+            }
+        }
+        if (sumOdd == sumEven)
+        {
+            Console.WriteLine("zogi sum is the same as eizogi");
+        }
+        else
+        {
+            Console.WriteLine("the sum is not the same blud");
+        }   
+    }
