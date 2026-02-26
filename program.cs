@@ -53,6 +53,38 @@
         }   
     }
 
+static void tentoten()
+    {
+        int[] arr = new int[100];
+        Random rnd = new Random();
+        int postiveCounter = 0;
+        int negativeCounter = 0;
+        int equalszero = 0;
+        
+        for (int i = 0; i < arr.Length; i++)
+        {
+            arr[i] = rnd.Next(-10, 11);
+            Console.Write(arr[i] + " ");
+            
+            if (arr[i] > 0)
+            {
+                postiveCounter++;
+            }
+            else if (arr[i] < 0)
+            {
+                negativeCounter++;
+            }
+            else
+            {
+                equalszero++;
+            }
+        }
+        Console.WriteLine("");
+        Console.WriteLine("Positive Numbers showed up " + postiveCounter + " times");
+        Console.WriteLine("Negative Numbers showed up " + negativeCounter + " times");
+        Console.WriteLine("zero showed up " + equalszero + " times");
+    }
+
     static void diddysList()
     {
         bool found = false;
